@@ -1,5 +1,5 @@
 module.exports = {
-  title: "Congying.Chen blog",
+  title: "MAO MAO CHU XIA",
   description: "my home page",
   head: [
     // 注入到当前页面的 HTML <head> 中的标签
@@ -13,15 +13,20 @@ module.exports = {
   themeConfig: {
     nav: [
       { text: "Home", link: "/" },
-      { text: "Guide", link: "/guide/" },
-      { text: "External", link: "https://baidu.com" },
+      { text: "学习笔记", link: "/note/" },
     ],
     siderbar: {
-      "/": [
-        //   "/", //指的是根目录的md文件 也就是 README.md 里面的内容
-        //         "apiword",  根目录创建 apiword.md文件
-        //         "api",根目录创建 api.md文件
-        //         "error" 根目录创建 error.md文件
+      "/note/": [
+        {
+          title: "前端笔记",
+          collapsable: true, // 可折叠
+          children: ["note/javascript/javascript-basic"],
+        },
+        {
+          title: "nginx学习笔记",
+          collapsable: true, // 可折叠
+          children: ["note/nginx/nginx入门"],
+        },
       ],
     },
     sidebarDepth: 2,
