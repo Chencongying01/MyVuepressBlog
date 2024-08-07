@@ -1,10 +1,10 @@
 ---
 home: true
-heroImage: /avatar.png
+heroImage: /images/logo.png
 heroText: 我的主页
 tagline: 我的主页
-actionText: 开始学习 →
-actionLink: https://www.bookstack.cn/read/webapi-tutorial/spilt.1.docs-intersectionObserver.md
+actionText: 了解一下 →
+actionLink: /note/javascript/
 features:
   - title: 简洁至上
     details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
