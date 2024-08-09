@@ -13,5 +13,8 @@
     "@vuepress/bundler-vite": "^2.0.0-rc.14",
     "@vuepress/theme-default": "^2.0.0-rc.40",
     "vuepress": "^2.0.0-rc.14"
+  },
+  "dependencies": {
+    "vue": "^3.4.37"
   }
 }
