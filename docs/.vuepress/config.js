@@ -1,4 +1,4 @@
-import { defaultTheme } from '@vuepress/theme-default'
+import { defaultTheme } from "@vuepress/theme-default";
 import { defineUserConfig } from "vuepress";
 import { viteBundler } from "@vuepress/bundler-vite";
 
@@ -16,6 +16,7 @@ export default defineUserConfig({
   // markdown: {
   //   lineNumers: false, // 代码块显示行号
   // },
+  base: "/MyVuepressBlog/", // 部署到github相关的配置
   theme: defaultTheme({
     logo: "/images/logo.png",
     repo: "", // 项目地址
@@ -29,18 +30,18 @@ export default defineUserConfig({
         children: [
           {
             text: "前端笔记",
-            prefix: 'javascript/',
-            children: ['README.md']
+            prefix: "javascript/",
+            children: ["README.md"],
           },
           {
             text: "Nginx",
-            prefix: 'nginx/',
-            children: ['README.md']
+            prefix: "nginx/",
+            children: ["README.md"],
           },
         ],
       },
     ],
-    sidebar: 'heading',
+    sidebar: "heading",
     // sidebar: {
     //   "/note/javascript/": [
     //     {
