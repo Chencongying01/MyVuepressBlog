@@ -1,4 +1,4 @@
-import { defaultTheme } from "@vuepress/theme-default";
+import { plumeTheme } from "vuepress-theme-plume";
 import { defineUserConfig } from "vuepress";
 import { viteBundler } from "@vuepress/bundler-vite";
 
@@ -17,7 +17,7 @@ export default defineUserConfig({
   //   lineNumers: false, // 代码块显示行号
   // },
   base: "/MyVuepressBlog/", // 部署到github相关的配置
-  theme: defaultTheme({
+  theme: plumeTheme({
     logo: "/images/logo.png",
     repo: "", // 项目地址
     lastUpdated: "上次更新", // 开启页面最后更新时间
@@ -26,17 +26,14 @@ export default defineUserConfig({
       { text: "Home", link: "/" },
       {
         text: "学习笔记",
-        prefix: "/note/",
-        children: [
+        items: [
           {
             text: "前端笔记",
-            prefix: "javascript/",
-            children: ["README.md"],
+            link: "/note/javascript/",
           },
           {
             text: "Nginx",
-            prefix: "nginx/",
-            children: ["README.md"],
+            link: "/note/nginx/",
           },
         ],
       },
